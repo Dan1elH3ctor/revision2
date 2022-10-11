@@ -1,0 +1,7 @@
+/* select only first and last element to apply style */
+.phone>ul>li:first-child {
+    color: blue;
+}
+.phone>ul>li:last-child {
+    color: red;
+}
