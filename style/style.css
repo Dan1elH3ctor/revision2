@@ -5,3 +5,24 @@
 .phone>ul>li:last-child {
     color: red;
 }
+header>img {
+    width: 7em;
+}
+a:link {
+    color: white;
+    border-radius: 20px;
+}
+a:visited {
+    color: rgba(147, 164, 147);
+}
+a:hover {
+    font-size: 18px;
+}
+a:active {
+    border: 2px solid green;
+    color: darkcyan;
+}
+.elements {
+    border: 2px solid powderblue;
+    padding: 30px;
+}
