@@ -5,7 +5,9 @@
 .phone>ul>li:last-child {
     color: red;
 }
-header>img {
+/* speceficity creates priority according to value */
+/* id has has highest priority with specefic targets */
+#image {
     width: 7em;
 }
 a:link {
@@ -22,7 +24,40 @@ a:active {
     border: 2px solid green;
     color: darkcyan;
 }
+/* class has the highest priority */
 .elements {
     border: 2px solid powderblue;
     padding: 30px;
+    background-color: hotpink;
+}
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+/* psuedo selector before & after */
+/* h2::after { */
+    /* content: "|";
+    background-color: blue; */
+/* } */
+/* h2::before { */
+    /* content: "|";
+    background-color: blue; */
+/* } */
+/* psuedo selector styling only p & then first line */
+/* h2::first-letter {
+    background-color: aqua;
+    padding: 0 2px;
+} */
+/* h2::first-line {
+    padding: 2px 2px;
+    color: blueviolet;
+} */
+/* apply text shadow ob h2 using after */
+/* section::after {
+} */
+/* icon */
+/* element is lowest priority */
+i {
+    margin: 0 10px 0 0;
+    border-radius: 0;
+    background-color: white;
 }
