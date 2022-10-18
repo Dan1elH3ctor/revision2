@@ -1,38 +1,45 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /* select only first and last element to apply style */
-.phone>ul>li:first-child {
+/* .phone>ol>li:first-child {
     color: blue;
-}
-.phone>ul>li:last-child {
+} */
+/* .phone {
+    color: rgb(255, 4, 213);
+} */
+/* .phone>ol>li:last-child {
     color: red;
-}
+} */
 /* speceficity creates priority according to value */
 /* id has has highest priority with specefic targets */
 /* #image {
     width: 7em;
-}
-header>img {
-    width: 10em ;
 } */
-a:link {
-    color: white;
-    border-radius: 20px;
+/* a:link {
+    color: khaki
 }
 a:visited {
-    color: rgba(147, 164, 147);
+    color: rgb(0, 255, 0);
 }
 a:hover {
     font-size: 18px;
+    color: firebrick;
 }
 a:active {
     border: 2px solid green;
-    color: darkcyan;
+    color: rgb(255, 5, 5);
 }
 /* class has mid priority as it is a grouping */
 /* .elements {
     background-color: red;
 }
 ul {
-    background-color: blue;
+    background-color: blue !important;
 } */
 html {
     font-family:Verdana, Geneva, Tahoma, sans-serif
@@ -55,13 +62,32 @@ html {
     padding: 2px 2px;
     color: blueviolet;
 } */
-/* apply text shadow ob h2 using after */
-/* section::after {
-} */
+/* apply text shadow on h2 using after */
+div::after, h2 {
+}
 /* icon */
 /* element is lowest priority */
-i {
+/* i {
     margin: 0 10px 0 0;
     border-radius: 0;
     background-color: white;
+} */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list {
+    display: flex;
+    gap: 5rem;
+}
+.brand {
+    display: flex;
+    background-color: indigo;
+    color: lawngreen;
+    gap: 5rem;
+    flex-direction: row-reverse;
+}
+.elements {
+    
 }
